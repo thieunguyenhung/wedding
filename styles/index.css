@@ -46,3 +46,8 @@ body {
   height: 100vh;
   object-fit: cover;
 }
+
+.story-img {
+  visibility: hidden;
+  width: 100%;
+}
