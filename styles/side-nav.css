@@ -1,12 +1,11 @@
 #side-nav {
   height: 100vh;
-  width: 30px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow: hidden;
-  padding-top: 2em;
+  padding-top: 2rem;
 }
 
 #side-nav ul {
@@ -14,11 +13,10 @@
   flex-direction: column;
   align-items: start;
   list-style-type: none;
-  padding-inline-start: 5px;
 }
 
 #side-nav li {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 #side-nav li:last-child {
@@ -26,7 +24,7 @@
 }
 
 #side-nav a {
-  font-size: small;
+  font-family: 'Yrsa', serif;
   color: #284135;
   text-decoration: none;
   writing-mode: vertical-rl;
@@ -40,7 +38,7 @@
 
 #side-nav a::after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   right: 100%;
   width: 0.1em;

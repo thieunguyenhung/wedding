@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body,
 html {
   height: 100%;
@@ -5,13 +8,38 @@ html {
 }
 
 body {
-  display: none;
   color: #284135;
   background-color: #f3f2f1;
 }
 
-#main-scrollbar {
-  padding-left: 30px;
+.background-number-row {
+  height: 0;
+  visibility: hidden;
+}
+.background-number-col-18 {
+  font-family: 'Yrsa', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30vw;
+  top: -34vw;
+  left: 60vw;
+  -webkit-text-stroke-color: #c3c2c0;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+}
+.background-number-col-04 {
+  font-family: 'Yrsa', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30vw;
+  top: -35vw;
+  left: 9vw;
+  -webkit-text-stroke-color: #c3c2c0;
+  -webkit-text-stroke-width: 1px;
+  color: transparent;
+}
+
+#mainScrollbar {
   overflow: hidden;
   outline: none;
   position: fixed;
@@ -20,26 +48,46 @@ body {
   bottom: 0;
   left: 0;
 }
-
 .scroll-content {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-#landing-container {
+#landingContainer {
   position: relative;
   color: #fff;
 }
-
-#landing-header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 7em;
-  font-weight: 700;
+#landingImg {
+  visibility: hidden;
 }
-
+.landing-text {
+  font-family: 'Charm', cursive;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 7vw;
+  font-weight: 700;
+  text-shadow: 0 0.2rem 0 black;
+}
+.landing-groom {
+  top: 30%;
+  left: 40%;
+}
+.landing-and {
+  top: 50%;
+  left: 60%;
+}
+.landing-bride {
+  top: 65%;
+  left: 70%;
+}
+.landing-hashtag {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.3vw;
+  top: 96%;
+  left: 95%;
+}
 .landing-img {
   display: block;
   width: 100vw;
@@ -47,7 +95,116 @@ body {
   object-fit: cover;
 }
 
+/* story-section */
+.story-section {
+  margin: 10vw 2vw 10vw 0;
+}
 .story-img {
   visibility: hidden;
   width: 100%;
+}
+.story-img-margin {
+  margin-top: -8vw;
+}
+.story-text {
+  font-size: 1.8vw;
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 400;
+  font-style: italic;
+  visibility: hidden;
+  text-align: justify;
+  text-justify: inter-word;
+  display: flex;
+  align-items: center;
+  /* margin-top: 3vw; */
+}
+.story-mid-row {
+  margin-top: 0;
+}
+
+/* about-section */
+.about-section {
+  margin: 10vw 5vw 10vw 5vw;
+}
+.about-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.about-col {
+  -ms-flex: 33.33%;
+  flex: 33.33%;
+  max-width: 33.33%;
+  text-align: center;
+}
+.about-col div:first-child {
+  display: inline-block;
+  text-align: left;
+}
+.about-col-first {
+  visibility: hidden;
+}
+.about-col-mid {
+  visibility: hidden;
+  margin-top: 12vw;
+}
+.about-col-last {
+  visibility: hidden;
+  margin-top: 20vw;
+}
+.about-first-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.3vw;
+}
+.about-mid-text {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3.3vw;
+}
+.about-last-text {
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5vw;
+}
+
+/* gallery-section */
+.gallery-section {
+  margin: 10vw 2vw 10vw 0;
+}
+.gallery-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px 0 0;
+}
+.gallery-row div:first-child {
+  padding-left: 0;
+}
+.gallery-column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0.3vw;
+}
+.gallery-column figure {
+  margin: 0.6vw 0;
+}
+.gallery-img {
+  visibility: hidden;
+  vertical-align: middle;
+  width: 100%;
+}
+.footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 1vw;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 1rem;
 }
